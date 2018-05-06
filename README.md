@@ -1,2 +1,8 @@
 # HyperParamSearch
 code for different hyper-parameter search attempts
+
+This repo contains 3 main sets of code. The first set is the code used to implement grid search mnist_mlpGridSearch.py. This file is used to loop through models with different hyperparameter choices.
+
+The second segment of code is the attempt to get spearmint running on the google colab, SpearmintTest.ipynb. Because the google colab did not natively support uploading such a large file system, holding the files on the google drive was attempted to also allow for persitancy. However there were a few problems, and while this system for uploading libraries almost worked, there was a few problems with accessing sub-directories. Another potential solution would have been to have downloaded the git repository, however that would need to be set up everytime the instance is reconnected to.
+
+The last pieces of code in the nascell alterations folder, there  are alterations made to the nascell automl system. the nascell-automl repository can be found here, https://github.com/wallarm/nascell-automl, and will need to be installed before being able to run these programs. After a local copy of the repository is made, copy in the new files into the nascell-automl folder and overwrite similiar files. Now the data base needs to be loaded in. The CIFAR-10 database can be found at https://www.cs.toronto.edu/~kriz/cifar.html, and the version for python should be downloaded, unzipped, and maintained in it's respective directory within the local nascell repository. At this point, assuming keras and tensorflow are installed on the computer in python 3.6, then train.py should be ran
